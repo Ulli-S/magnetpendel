@@ -5,6 +5,19 @@
   <title>Magnet-Pendel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/mpendel.css" type="text/css" media="screen,projection" />
+	<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/"
+  }
+}
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+</script>	
+<script type="module" src="./js/mpendel.js"></script>
+	
 </head>
 
 <body>
@@ -28,9 +41,6 @@
     <div class="muted">Zur Pendelauslenkung den Boden anklicken</div>
   </div>
   
-  <script src="https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.179.1/examples/js/controls/OrbitControls.js"></script>
-	
-  <script src="js/mpendel.js"></script>
+
 </body>
 </html>
