@@ -1,4 +1,7 @@
-    // ---- Scene setup ----
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+// ---- Scene setup ----
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x0b0f14);
 
@@ -8,7 +11,7 @@
 
     const camera = new THREE.PerspectiveCamera(55, window.innerWidth/window.innerHeight, 0.1, 1000);
     camera.position.set(10, 12, 14);
-    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.target.set(0, 0.5, 0);
 
