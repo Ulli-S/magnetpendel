@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <title>Magnet-Pendel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/mpendel.css" type="text/css" media="screen,projection" />
+</head>
+
+<body>
+  <div id="ui">
+    <h1>Magnet-Pendel</h1>
+
+    <button id="toggleControls">⚙️ Einstellungen</button>
+    <div id="controlsPanel" style="display:none;">
+      <div class="row"><label>Magnete (3 bis 8)</label><input id="magCount" type="number" min="3" max="8" step="1" value="3"></div>
+      <div class="row"><label>Magnetstärke</label><input id="strength" type="range" min="0.2" max="5" step="0.1" value="2.2"></div>
+      <div class="row"><label>Dämpfung</label><input id="damping" type="range" min="0.0" max="2" step="0.01" value="0.12"></div>
+      <div class="row"><label>Gravitation</label><input id="restoring" type="range" min="0.0" max="1.5" step="0.01" value="0.35"></div>
+      <div class="row"><label>Fernwirkung</label><input id="power" type="range" min="1.0" max="4.0" step="0.1" value="3.0"></div>
+      <div class="row"><label>Speed</label><input id="speed" type="range" min="0.5" max="10.0" step="0.1" value="1.0"></div>
+      <div class="row"><label>Distanz</label><input id="magRadius" type="range" min="1" max="10" step="0.1" value="3"></div>
+      <div class="btns">
+        <button id="center">Pendel zentrieren</button>
+        <button id="toggleTrail">Spur ein/aus</button>
+      </div>   
+    </div>
+    <div class="muted">Zur Pendelauslenkung den Boden anklicken</div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.179.1/examples/js/controls/OrbitControls.js"></script>
+	
+  <script src="js/mpendel.js"></script>
+</body>
+</html>
