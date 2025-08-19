@@ -1,0 +1,33 @@
+//mpendel.css 2025 Ulrich Schwebinghaus
+
+    html, body { height: 100%; margin: 0; background: #0b0f14; color: #e7ecf2; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
+    #ui {
+      position: absolute; top: 12px; left: 12px; padding: 12px 12px 8px;
+      background: rgba(122,16,22,0.65);
+      border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      max-width: 320px; user-select: none;
+    }
+    #ui h1 { margin: 0 0 8px; font-size: 16px; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; color: #e7ecf2; }
+    .row { display: grid; grid-template-columns: 1fr 70px; gap: 10px; align-items: center; margin: 6px 0; 
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; color: #e7ecf2; font-size: 12px }
+    .row input[type="range"] { width: 100%; }
+    .row input[type="number"] { width: 70px; padding: 4px 6px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.12); 
+      background: rgba(255,255,255,0.06); color: #e7ecf2;}
+    .muted { opacity: .85; font-size: 12px; margin-top: 6px; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; color: #e7ecf2; }
+    .btns { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+    button {
+      padding: 8px 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.08);
+      color: #e7ecf2; cursor: pointer;
+    }
+    button:hover { border-color: rgba(255,255,255,0.25); }
+    canvas { display:block; }
+
+	#trailCanvas {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  pointer-events: none;
+	  z-index: 1;
+	}
