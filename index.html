@@ -108,7 +108,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	  const bobPosition = bob.position.clone();
 	  bobPosition.project(camera);
 	  const x = (bobPosition.x * 0.5 + 0.5) * trailCanvas.width;
-	  const y = (-(bobPosition.y * 0.5) + 0.5) * trailCanvas.height + 10;
+	  const y = (-(bobPosition.y * 0.5) + 0.5) * trailCanvas.height + 16;
   
 	  // Punkt zur Spur hinzufügen
 	  trailPoints.push({x, y});
