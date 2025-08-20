@@ -1,6 +1,3 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js';
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/controls/OrbitControls.js';
-
 // ---- Scene setup ----
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x0b0f14);
@@ -92,7 +89,7 @@ import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.179.1/exampl
 	  const bobPosition = bob.position.clone();
 	  bobPosition.project(camera);
 	  const x = (bobPosition.x * 0.5 + 0.5) * trailCanvas.width;
-	  const y = (-(bobPosition.y * 0.5) + 0.5) * trailCanvas.height;
+	  const y = (-(bobPosition.y * 0.5) + 0.5) * trailCanvas.height + 16;
   
 	  // Punkt zur Spur hinzufügen
 	  trailPoints.push({x, y});
