@@ -1,1 +1,2 @@
-
+mpendel.js is not called in magnetpendel.html
+But the code is integrated directly, because the variables of the script type module are not global.
